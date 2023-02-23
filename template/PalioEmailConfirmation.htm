@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <!--[if mso]>
+	<noscript>
+		<xml>
+            <o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<![endif]-->
+    <style>
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: Arial, sans-serif;
+        }
+
+        table,
+        td {
+            /* border:2px solid #000000 !important; */
+        }
+
+        @media screen {
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrJJLucXtAKPY.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrJJLufntAKPY.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrJJLucHtA.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmg1hVFteOcEg.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmg1hVGdeOcEg.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmg1hVF9eO.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VFteOcEg.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VGdeOcEg.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            /* devanagari */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+                unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0;">
+    <table role="presentation"
+        style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+        <tr>
+            <td align="center" style="padding:0;">
+                <table role="presentation"
+                    style="width:700px;border-collapse:collapse;border-spacing:0;text-align:left;">
+                    <tr>
+                        <td align="center" style="padding:25px 0;">
+                            <img src="cid:image002" style="width: 225px; height:auto;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:0;">
+                            <img src="cid:image004" style="width: 350px; height:auto;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:10px 0;">
+                            <img src="cid:image006" style="width: 125px; height:auto;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:0 0 20px 0; border-bottom: 1px lightgray solid;">
+                            <p
+                                style="text-align:center; font-size: 28px; font-weight:500; color:#6945A5; line-height: 1.3;">
+                                You're almost there!
+                                <br>
+                                Please confirm your email address
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding: 20px 0 0 0;">
+                <table role="presentation"
+                    style="width:700px;border-collapse:collapse;border-spacing:0;text-align:left;">
+                    <tr>
+                        <td align="center" style="padding:25px 0;">
+                            <p style="text-align:center; font-size: 16px; font-weight:500; color:gray; line-height: 1.3;">
+                                Hey &lt;USER NAME or EMAIL&gt;, did we get your email address right?
+                                <br>
+                                To confirm that you're getting our emails, simply click the button below.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding:0;">
+                            <a href="" style="border:0;background-color: #6945A5; padding:14px 20px; color:white; font-size: 13px; border-radius: 5px 5px 0 5px;">
+                                Confirm email address
+                            </a>
+                            <br>
+                            <br>
+                            <p style="text-align:center; font-size: 14px; font-weight:500; font-style:italic; color:gray; line-height: 1.3;">
+                                This confirmation will expire in 1 hour
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td align="center" style="padding:10px 0;">
+                            
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td align="center" style="padding:20px 0 40px 0; border-bottom: 1px lightgray solid;">
+                            <p style="text-align:center; font-size: 16px; font-weight:500; color:gray; line-height: 1.3;">
+                                <strong>Have any questions?</strong> know that our doors are always open
+                                <br>
+                                and that you should feel free to contact us for any reason whatsoever.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>      
+        <tr>
+            <td align="center" style="padding: 20px 0 0 0;">
+                <table role="presentation"
+                    style="width:700px;border-collapse:collapse;border-spacing:0;text-align:left;">
+                    <tr>
+                        <td align="center" style="padding:20px 0 40px 0;">
+                            <p style="text-align:center; font-size: 13px; font-weight:500; color:lightgray; line-height: 1.3;">
+                                Copyright 2021 Qmera. All Rights Reserved.
+                                <br>
+                                Office 541 - 182-184 High Street North, East Ham, London E6 2JA, UK
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> 
+    </table>
+</body>
+
+</html>

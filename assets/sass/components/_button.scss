@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.qbtn {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .45rem 2.2rem;
+    font-size: 15px;
+    transition: 0.3s;
+    border-radius: 10px 10px 0px 10px;
+    text-decoration: none!important;
+    @include breakpoint(max-md){
+        font-size: 14px;
+    }
+    &.radius-50 {
+        border-radius: 50px;
+    }
+}
+
+.qbtn-primary {
+    color: $theme-white!important;
+    background-color: $theme-blue;
+    border-color: $theme-blue;
+}
+
+.qbtn-primary:hover, .qbtn-primary:active, .qbtn-primary:focus {
+    color: $theme-white;
+    background-color: $theme-blue;
+    border-color: $theme-blue;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.qbtn-purple {
+    color: $theme-white!important;
+    background-color: $theme-purple;
+    border-color: $theme-purple;
+}
+
+.qbtn-purple:hover, .qbtn-purple:active, .qbtn-purple:focus {
+    color: $theme-white;
+    background-color: $theme-purple;
+    border-color: $theme-purple;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.qbtn-purpletr {
+    color: $theme-purple!important;
+    background-color: transparent;
+    border-color: $theme-purple;
+}
+
+.qbtn-purpletr:hover, .qbtn-purpletr:active, .qbtn-purpletr:focus {
+    color: $theme-purple;
+    background-color: transparent;
+    border-color: $theme-purple!important;
+    opacity: 0.9;
+}
+
+.qbtn-light {
+    color: $theme-darkpurple!important;
+    background-color: $theme-white;
+    border-color: $theme-white;
+    text-decoration: none;
+}
+
+.qbtn-orange {
+    color: $theme-purple!important;
+    background-color: $theme-orange;
+    border-color: $theme-orange;
+}
+
+.qbtn-orange:hover, .qbtn-orange:active, .qbtn-orange:focus {
+    color: $theme-purple;
+    background-color: $theme-orange;
+    border-color: $theme-orange;
+    opacity: 0.9;
+}
+
+.qbtn-plain {
+    color: $theme-orange!important;
+    background-color: transparent;
+    border-color: transparent;
+    padding:0;
+    padding-right: 20px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.74935 11.8333C1.55464 11.8337 1.36594 11.7659 1.21602 11.6416C1.13164 11.5717 1.06188 11.4858 1.01076 11.3888C0.95963 11.2918 0.928134 11.1858 0.91807 11.0766C0.908007 10.9675 0.919575 10.8574 0.952112 10.7527C0.98465 10.6481 1.03752 10.5508 1.10768 10.4666L4.84102 5.99997L1.24102 1.52497C1.1718 1.43973 1.1201 1.34165 1.08891 1.23637C1.05772 1.13109 1.04764 1.02068 1.05925 0.911485C1.07087 0.802295 1.10395 0.696477 1.1566 0.600113C1.20924 0.503749 1.28041 0.41874 1.36602 0.349971C1.45224 0.274107 1.55321 0.216884 1.6626 0.181893C1.77198 0.146902 1.88742 0.134899 2.00166 0.146637C2.11591 0.158374 2.22649 0.193599 2.32648 0.2501C2.42646 0.306602 2.51369 0.38316 2.58268 0.474971L6.60768 5.47497C6.73025 5.62408 6.79726 5.81112 6.79726 6.00414C6.79726 6.19716 6.73025 6.38419 6.60768 6.5333L2.44102 11.5333C2.35742 11.6342 2.25122 11.7139 2.13105 11.766C2.01088 11.8181 1.88011 11.8412 1.74935 11.8333Z' fill='%23FFA03E'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 12px;
+        right: -6px;
+        top: 5px;
+    }
+}
+
+.qbtn-plain:hover, .qbtn-plain:active, .qbtn-plain:focus {
+    color: $theme-orange;
+    background-color: transparent;
+    border-color: transparent!important;
+    opacity: 0.9;
+}
+
+.readmore-btn {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    padding-right: 20px;
+    color: $theme-orange;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.99886 16.3328C8.80415 16.3331 8.61546 16.2653 8.46553 16.1411C8.38115 16.0711 8.3114 15.9852 8.26027 15.8883C8.20914 15.7913 8.17765 15.6852 8.16758 15.5761C8.15752 15.4669 8.16909 15.3569 8.20162 15.2522C8.23416 15.1475 8.28703 15.0503 8.3572 14.9661L12.0905 10.4994L8.49053 6.02442C8.42131 5.93918 8.36961 5.8411 8.33842 5.73582C8.30723 5.63054 8.29715 5.52013 8.30877 5.41094C8.32038 5.30175 8.35346 5.19593 8.40611 5.09956C8.45875 5.0032 8.52992 4.91819 8.61553 4.84942C8.70175 4.77356 8.80272 4.71633 8.91211 4.68134C9.02149 4.64635 9.13693 4.63435 9.25117 4.64609C9.36542 4.65782 9.476 4.69305 9.57599 4.74955C9.67597 4.80605 9.7632 4.88261 9.8322 4.97442L13.8572 9.97442C13.9798 10.1235 14.0468 10.3106 14.0468 10.5036C14.0468 10.6966 13.9798 10.8836 13.8572 11.0328L9.69053 16.0328C9.60693 16.1336 9.50074 16.2133 9.38056 16.2654C9.26039 16.3176 9.12962 16.3406 8.99886 16.3328Z' fill='%23FFA03E'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 21px;
+        top: 0px;
+    }
+}

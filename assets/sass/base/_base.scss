@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $theme-purple;
+  text-decoration: none;
+  transition: 0.6;
+
+  @include on-event {
+    transition:  $transition;
+    color: $theme-orange;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+}

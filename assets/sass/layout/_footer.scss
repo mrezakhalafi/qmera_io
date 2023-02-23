@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+    padding-top: 0;
+    padding-bottom: 50px;
+    .container {
+        @media (min-width: 1400px) {
+          max-width: 1120px;
+        }
+    }
+    .container { 
+        @include breakpoint(max-md) {
+          padding: 0 30px;
+        }
+      }
+    p {
+        font-size: 12px;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 30px;
+        span {
+            padding: 0px 8px;
+        }
+    }
+    .footer-content {
+        display: flex;
+        border-top:1px solid #EAF0EF;
+        padding-top: 50px;
+        @include breakpoint(max-lg) {
+            flex-direction: column;
+        }
+    }
+    .copyright-txt {
+        text-align: right;
+        flex-basis: 100%;
+        color: $theme-purple;
+        @include breakpoint(max-lg) {
+            text-align: center;
+        }
+    }
+    .footer-menu-links {
+        flex: none;
+        padding: 0;
+        list-style: none;
+        justify-content: left;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 20px;
+        li {
+            display: inline-block;
+            margin-right: 26px;
+            margin-bottom: 22px;
+            div {
+                a {
+                color: $theme-darkgray2;
+                }
+            }
+        }
+    }
+    .social-icons {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        list-style: none;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        li {
+            a {
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                background-color: $theme-white;
+                border: 1px solid $theme-black;
+                text-align: center;
+                padding: 9px;
+                border-radius: 50%;
+                color: $theme-black;
+                font-size: 16px;
+                line-height: 28px;
+                margin-right: 7px;
+                &:hover {
+                    transition:  $transition;
+                  
+
+                }
+            }
+        }
+    }
+}
+
+/**
+* Scroll to top
+*/
+.scrollToTop {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: $theme-white!important;
+    z-index: 28;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    border-radius: 5px;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+    background: $theme-black;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transition:  $transition;
+    &.active {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    img {
+        width: 100%;
+    }
+}
